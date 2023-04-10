@@ -5,36 +5,325 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>YunTech-HCILAB</title>
     <style>
-        .box{
-            width: 600px;
+        :root {
+            --bannerImg: 50px;
+            --bannerHeight: 80px;
+            --divbackground: rgb(215, 208, 190);
         }
     </style>
-    <link rel="stylesheet" href="./stylesheets/all.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
 
 <body>
-    <p class="aabb">asdfasdf</p>
-    <div class="box table-responsive">
-        <table class="table">
-            <thead>
-                <tr >
-                    <td scope="col">欄位1</td>
-                    <td scope="col">欄位2</td>
-                    <td scope="col">欄位3</td>
-                    <td scope="col">欄位1</td>
-                    <td scope="col">欄位2</td>
-                    <td scope="col">欄位3</td>
-                </tr>
-            </thead>
-            
-        </table>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-warning fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#home"><img class="img-fluid" src="img/hciLABLOGO.png" alt=""
+                    style="height:var(--bannerImg);"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class=" collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-end">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#about">關於</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#members">實驗成員</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#research">研究成果</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            課程資訊
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#graduate ">研究所</a></li>
+                            <li><a class="dropdown-item" href="#bachelor ">大學部</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <div id="home" class="container-fluid p-0">
+        <div class="d-flex vh-100 my-0 px-0 bg-gradient" style="background-color: var(--divbackground);">
+            <div class="m-auto"> <img src="img/hciLABLOGO.png" alt=""></div>
+        </div>
     </div>
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
+    <div id="about" style="height: var(--bannerHeight);"> <!-- empty div --></div>
+    <div class="container mt-3" style="top: 100px;">
+        <h1>about YunTech HCILAB</h1>
+        <p>HCILAB致力於互動技術鑽研，以「遊戲設計」、「虛擬實境」、「擴增實境」以及「機電整合」為主軸，希望解決人類與機器互動所產生的問題，並以人文與數位設計觀點為立基，強化體驗溫度。同時本實驗室也專注於機台與數位遊戲的整合發展，藉此激發不同的遊戲體驗。
+        </p>
+        <p>
+            The Human-Computer Interaction Lab is dedicated to researching interactive technology with a focus on game
+            design, virtual reality, augmented reality, and mechatronics integration. Our goal is to solve problems that
+            arise in human-machine interaction while enhancing the overall user experience through the perspective of
+            both humanities and digital design. Additionally, we are committed to integrating gaming machines with
+            digital games, in order to inspire diverse gaming experiences.
+        </p>
+        <ul class="">
+            <li>AR/VR數位內容（AR/VR Digital Content）</li>
+            <li>2D/3D遊戲開發（2D/3D Game Development）
+                <ul>
+                    <li>遊戲美術（Game Art）</li>
+                    <li>遊戲互動（Gameplay Interaction）</li>
+                </ul>
+            </li>
+            <li>人機互動設計（HCI Design）
+                <ul>
+                    <li>輸入裝置開發（ID R&D）</li>
+                    <li>遊戲機台設計（Game Cabinet Design）</li>
+                </ul>
+            </li>
+            <li>資訊安全
+                <ul>
+                    <li>資訊隱藏(Data Hiding)</li>
+                    <li>可逆式資訊隱藏(Reversible Data Hiding)</li>
+                    <li>可逆式資訊隱藏於加密影像（Reversible Data Hiding in Encrypted Image）</li>
+                </ul>
+            </li>
+        </ul>
+        <p class="h3 mt-4">實作成果：</p>
+        <h4 class="mt-4">AR/VR/MR/XR</h4>
+        <img class="img-fluid" src="img/research/r1.png" alt="">
+
+        <h4 class="mt-4">互動開發-PC/Mobile</h4>
+        <img class="img-fluid" src="img/research/r2.png" alt="">
+
+        <h4 class="mt-4">人機互動設計</h4>
+        <img class="img-fluid" src="img/research/r3.png" alt="">
+
+        <h4 class="mt-4">次世代遊戲美術</h4>
+        <img class="img-fluid" src="img/research/r4.png" alt="">
+
+        <h4 class="mt-4">低面數遊戲美術</h4>
+        <img class="img-fluid" src="img/research/r5.png" alt="">
+
+        <h4 class="mt-4">電腦繪圖</h4>
+        <img class="img-fluid" src="img/research/r6.png" alt="">
+
+        <h4 class="mt-4">影像成果</h4>
+        <img class="img-fluid" src="img/research/r7.png" alt="">
+
+    </div>
+
+    <div id="members" style="height: var(--bannerHeight);"> <!-- empty div --></div>
+    <div class="container">
+        <h1>members</h1>
+        <div class="row justify-content-center align-items-center">
+
+            <div class="col-12">
+                <p class="h2">　　指導老師</p>
+                <div class="row justify-content-center align-items-center ">
+                    <div class="col-2"><img class="img-fluid" src="img/members/ShiuCW.jpg" alt=""></div>
+                    <div class="col-4">
+                        <h3>Chih-Wei Shiu 許志維</h3>
+                        <p><b>專長：</b><br>電腦繪圖、影像處理、遊戲企劃、AR/VR/MR/XR互動程式開發、遊戲設計、人機互動開發</p>
+                        <p><b>信箱：</b><a href="mailto:chihwei.shiu@gmail.com">chihwei.shiu@gmail.com</a></p>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="col-12 mt-3">
+                <p class="h2">　　2023-碩士生</p>
+                <div class="row justify-content-center align-items-center ">
+                    <div class="col-2"><img class="img-fluid" src="img/members/recruit.png" alt=""></div>
+                    <div class="col-4">
+                        <h3>歡迎約時間面談</h3>
+                        <p><b>招募專長：</b><br>電腦繪圖、影像處理、遊戲企劃、AR/VR/MR/XR互動程式開發、遊戲設計、人機互動開發</p>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <div id="research" style="height: var(--bannerHeight);"> <!-- empty div --></div>
+    <div class="container">
+        <h1>research</h1>
+        <p class=" mt-5">最新論文發表： <a class=" text-decoration-none link-info" target="_blank"
+                href="https://scholar.google.com.tw/citations?hl=zh-TW&view_op=list_works&gmla=ABEO0Yrvw4wogM3nWJwbajcQalEsWtQFVZgRFCk7MC4alC0NKSfGWmTXGGUE8LHXIl0XfWToqvFfkCH1iXg1B7RmgPY&user=rNASP-UAAAAJ">
+                google scholar</a>
+        </p>
+
+        <h2>學術論文</h2>
+        <ol>
+            <p class="mb-0 mt-2">--學術國際期刊--</p>
+            <li>Y.C. Chen, and <b>C.W. Shiu</b>, “Distributed Encrypted Image-Based Reversible Data Hiding”, Journal of
+                Internet Technology, vol. 22, no. 1, pp. 101-107, 2021. (SCI, IF=0.786)</li>
+            <li><b>C.W. Shiu</b>, J. Chen and Y.C. Chen, “Low-Cost Online Handwritten Symbol Recognition System in
+                Virtual Reality Environment of Head-Mounted Display”, Mathematics, vol. 8, no. 11, pp. 1967, 2020. (SCI,
+                IF=1.747)</li>
+            <li>Y.C. Chen, T.H. Hung, S.H. Hsieh, <b>C.W. Shiu</b>, “A New Reversible Data Hiding in Encrypted Image
+                Based on Multi-Secret Sharing and Lightweight Cryptographic Algorithms,” Transactions on Information
+                Forensics and Security, vol. 14, no.12, pp. 3332-3343. (SCI, IF= 6.211, Times cited=10).</li>
+            <li><b>C.W. Shiu</b>*, Y.C. Chen, Wien Hong, “Reversible Data Hiding in Permutation-Based Encrypted Images
+                with Strong Privacy, ” KSII Transactions on Internet and Information System, vol. 13, no. 2, pp.
+                1020-1042, 2019.(SCI, IF= 0.71)</li>
+            <li><b>C.W. Shiu</b>, Y.C. Chen, and Wien Hong, “Encrypted Image-based Reversible Data Hiding with Public
+                Key Cryptography from Difference Expansion,” Signal Processing: Image Communication, vol. 58, no. 10,
+                pp. 2583-2594. (SCI, IF =2.814, Times cited=89)</li>
+            <li>W. Hong, G. Horng, <b>C.W. Shiu</b>, T.S. Chen, and Y.C. Chen, “Reversible Data Hiding Method Using
+                Complexity Control and Human Visual System,” The Computer Journal, vol. 58, no. 10, pp. 2583-2594,
+                2015(SCI, IF =0.98)</li>
+            <li>Y.C. Chen, <b>C.W. Shiu</b>, and G. Horng, “Encrypted Signal-Based Reversible Data Hiding with Public
+                Key Cryptosystem,” Journal of Visual Communication and Image Representation, vol. 25, no. 5, pp.
+                1164-1170, 2014. (SCI, IF =2.259, Times cited=120)</li>
+            <li>J. Chen, T.S. Chen, W. Hong, G. Horng, H.Y. Wu, and <b>C.W. Shiu</b>, “A New Reference Pixel Prediction
+                for Reversible Data Hiding with Reduced Location Map,” KSII Transactions on Internet and Information
+                Systems, vol. 8, no. 3, pp. 1150-1118, 2014. (SCI, IF =0.71)</li>
+            <li>J. Chen, <b>C.W. Shiu</b> and M.C. Wu, “An Improvement of Diamond Encoding Using Characteristic Value
+                Positioning and Modulus Function,” Journal of Systems and Software, vol. 86, no. 5, pp. 1377-1383, 2013.
+                (SCI, IF =2.559)</li>
+            <li>J. Chen, W. Hong, <b>C.W. Shiu</b>, D.C. Lou, C.C. Lee and J.L. Liu, “Prediction Error Adjustment
+                Technique for High Quality Reversible Data Hiding,” International Journal of Innovative Computing,
+                Information and Control, vol. 9, no. 2, pp. 611-623, 2013. ( EI) </li>
+            <li>C. L. Pan, W. Hong, T.S. Chen, J. Chen, and <b>C.W. Shiu</b>, “Multilevel Reversible Data Hiding Using
+                Modification of Prediction Errors,” International Journal of Innovative Computing, Information and
+                Control, vol. 7, no. 9, pp. 5107-5118, Sep. 2011 ( EI)</li>
+            <li>W. Hong, J. Chen, T.S. Chen, and <b>C.W. Shiu</b>, “Steganography for Block Truncation Coding Compressed
+                Images Using Hybrid Embedding Scheme,” International Journal of Innovative Computing, Information and
+                Control, vol. 7, no. 3, 11 pages, 2011. ( EI)</li>
+            <li>W. Hong, T.S. Chen, <b>C.W. Shiu</b>, and M.C. Wu, “Lossless Data Embedding in BTC codes Based on
+                Prediction and Histogram Shifting,” Applied Mechanics and Materials, vol. 65, pp. 182-185, 2011. (EI)
+            </li>
+            <li>W. Hong, T.S. Chen, Y.P. Chang, and <b>C.W. Shiu</b>, “A High Capacity Reversible Data Hiding Scheme
+                Using Orthogonal Projection and Prediction Error Modification,” Signal Processing, vol. 90, pp.
+                2911-2922, 2010. (SCI, IF=4.086, Times cited=101)</li>
+            <li>J. Chen, W. Hong, T.S. Chen, and <b>C.W. Shiu</b>, “Steganography for BTC Compressed Images Using No
+                Distortion Technique,” The Imaging Science Journal, vol. 58, pp. 177-185, 2010. (SCI, IF=0.846, Times
+                cited=56) </li>
+            <li>W. Hong, T.S. Chen, and <b>C.W. Shiu</b>, “Reversible Data Hiding for High Quality Images Using
+                Modification of Prediction Errors,” The Journal of Systems and Software, vol. 82, pp. 1833-1842, 2009.
+                (SCI, IF=2.559, Times cited=301)</li>
+            <p class="mb-0 mt-2">--學術國內研討會論文--</p>
+            <li>林杏儒，黃韵茹，王秀文，<b>許志維</b>，張嘉玲 “AR遊戲導入生態環境教育之應用─以臺灣常見外來種保育為例, ” 2019學術研討會：AI在教育科 技的應用與實踐，台灣，2019</li>
+            <li>黃姿樺，楊理鈞，吳翎華，<b>許志維</b>“救救亞當-以細懸浮微粒(PM2.5)為主題的遊戲機台製作及研究,” 2017台灣感性研討會, 台灣,2017</li>
+            <li>陳彥霖，林詩庭，蘇詠茹，<b>許志維</b>“述日-青少年心理互動遊戲,” 2017台灣感性研討會, 台灣,2017</li>
+            <li>李宜亭，賀俊智，<b>許志維</b>，蔡子瑋“互動裝置遊戲融合智慧醫療復健系統-熱氣衝飛”, 2017台灣感性研討會, 台灣,2017</li>
+            <li>許睿中，<b>許志維</b>， 洪國寶，“基於預測誤差值修改的隨機嵌入制機之可逆式資訊隱藏技術,” 2011數位內容與多媒體應用研討會, 2011</li>
+            <li>洪國寶，李振祥，<b>許志維</b>“植基於統計分析之資訊隱藏技術,” 資訊管理及應用國際研討會, 2010</li>
+            <li>洪國寶，曹憲中，<b>許志維</b>“植基於適應性亂數之資訊隱藏技術,” 資訊科技應用學術研討會, 2009</li>
+            <li>潘哲倫，許俊傑，洪威恩，紀萬益，<b>許志維</b> “植基於長條圖修改之高品質無失真資訊隱藏技術,”資訊管理與數位內容研討會-宅經濟下的數字應用(IMDC 2009)。</li>
+            <li>C.L. Liu, C.C. Lee, D.C. Lou, W. Hong, J. Chen, <b>C.W. Shiu</b>, “Reversible Data Hiding Using
+                High-Peak Prediction Errors,” Workshop on Consumer Electronics, Nov. 2009. (最佳論文獎)</li>
+            <li>W. Hong, <b>C.W. Shiu</b> and T.S. Chen, “Efficient Data Hiding for AMBTC-Compressed Images,” The 21th
+                IPPR Conference on Computer Vision, Graphics, and Image Processing. (CVGIP2008)</li>
+            <li>洪威恩，蔡雅純，<b>許志維</b>，黃為亮“資訊影藏運用於文字圖像之研究”資訊管理及應用國際研討會2008</li>
+            <li>洪威恩，<b>許志維</b>“無須搜尋之碎形影像技術應用於數位浮水印研究”，The 19th International Conference on Information Management 2008
+                (ICIM 2008)</li>
+            <li>洪威恩，<b>許志維</b>，蔡雅純“灰階碎形影像與隱像術之研究”，International Conference on Advanced Information Technologies 2007
+                (AIT2007)</li>
+            <p class="mb-0 mt-2">--學術國際研討會論文--</p>
+            <li><b>C.W. Shiu</b>*, W. Hong, J. Chen, T.S. Chen, W.Y. Ji “Data Hiding for Color Image by Rubik's Cube,”
+                Third International Conference on Cyber Security of Smart Cities, Industrial Control System and
+                Communications(SSIC 2018)</li>
+            <li>W. Hong, J. Chen, M.C. Wu, and <b>C.W. Shiu</b>, “A Secure Data Hiding Method Based on Preservation of
+                Saturated Pixels,” in Proceedings of The 2012 International Conference on Digital Image Processing
+                (ICDIP 2012), Jan. 10, 2012. (EI)</li>
+            <li>W. Hong, T.S. Chen, and <b>C.W. Shiu</b>, “A Minimal Euclidean Distance Searching Technique for Sudoku
+                Steganography,” in Proceedings of International Symposium on Information Science and Engineering (ISISE
+                2008), Shanghai China, vol. 1, pp. 515-518, Dec. 2008. (EI, Times cited=54)</li>
+            <li>W. Hong, T.S. Chen, and <b>C.W. Shiu</b>, “Reversible Data Hiding Based on Histogram Shifting of
+                Prediction Errors,” in Proceedings of International Symposium on Intelligent Information Technology
+                Application (IITA 2008), Shanghai China, pp. 292-295, Dec. 2008. (EI)</li>
+            <li>W. Hong, T.S. Chen, and <b>C.W. Shiu</b>, “Steganography Using Sudoku Revisited,” in Proceedings of
+                International Symposium on Intelligent Information Technology Application (IITA 2008), Shanghai China,
+                vol. 2, pp. 935-939, Dec. 2008. (EI)</li>
+            <li>W. Hong, T.S. Chen, and <b>C.W. Shiu</b>, “A High Quality Histogram Shifting Based Embedding Technique
+                for Reversible Data Hiding,” in Proceedings of The International Conference on Intelligent Systems
+                Design and Applications. (ISDA 2008), Kaohsiung Taiwan, vol. 3, pp 183-187, Nov. 2008. (EI)</li>
+            <li>Y.T. Liu, W. Tarng, C.M. Lin, T.C. Fan, K.Y. Pan and <b>C.W. Shiu</b> , “The Development of a Virtual
+                Synchrotron Light Source for Educational Applications,” in Proceedings of the Third IASTED International
+                Conference on Applied Simulation and Modeling.(ASM2008, EI), Corfu, Greece (EI)</li>
+            <li>W. Hong, T.S. Chen, and <b>C.W. Shiu</b>, “Lossless Steganography for AMBTC- Compressed Images,” in
+                Proceedings of Congress on Image and Signal Processing, (CISP 2008), Hainan China, vol. 2, pp. 13-17,
+                May 2008. (EI, Times cited=51)</li>
+            <p class="mb-0 mt-2">--電腦專書--</p>
+            <li><b>許志維</b>，洪維恩，蔡雅純 “3D遊戲夢想家-VIRTOOLS 4.0入門實作範例 第二版（3d程式設計用書）, ” ISBN:9789868442177，藍海文化</li>
+            <li>洪維恩，蔡雅純，<b>許志維</b> “3D遊戲夢想家-VIRTOOLS入門實作範例（3d程式設計用書）, ” ISBN:9861492186，金禾出版社</li>
+        </ol>
+
+        <h2>指導得獎</h2>
+        <ol>
+            <p class="mb-0">--2022--</p>
+            <li>創夢市集C-Lab 自製獨立遊戲產品孵化實驗室, 獲補C-Lab補助, 迴妖，賈晴雯、張婉慈、胡姿婷，業界導師：雷亞科技李勇霆</li>
+            <li>放視大賞, 迴妖，遊戲類-PC遊戲組/創意企劃組，銅獎，賈晴雯、張婉慈、胡姿婷</li>
+            <li>巴哈姆特ACG大賽, 迴妖，遊戲組，最佳2D美術，賈晴雯、張婉慈、胡姿婷</li>
+            <li>巴哈姆特ACG大賽, 綻慾，遊戲組，入圍，李姿君、鄭育玟、蘇云昇</li>
+  
+            <p class="mb-0 mt-2">--2021--</p>
+            <li>科技部大專生計畫【探討以霸凌為主題之劇情遊戲對玩家的省思與影響】110-2813-C-143-013-H</li>
+            <li>2021 A+大賞, 菜雞巴拉巴巴拉, 台灣互動體驗設計協會特別獎, 林盈君、馮旻萱、李亭穎</li>
+            <li>台灣數位媒體設計獎競賽, 菜雞巴拉巴巴拉, 數位遊戲，入圍, 林盈君、馮旻萱、李亭穎</li>
+            <li>巴哈姆特ACG大賽, 菜雞巴拉巴巴拉, 遊戲組，優選獎, 林盈君、馮旻萱、李亭穎</li>
+            <li>放視大賞, 菜雞巴拉巴巴拉, 遊戲類-PC遊戲組/創意企劃組，入圍, 林盈君、馮旻萱、李亭穎，2021</li>
+            <li>放視大賞, 心靈異途, 遊戲類-PC遊戲組/創意企劃組，入圍, 吳煜凌、曾子渝，2021</li>
+            <li>放視大賞, 7.3, 遊戲類-PC遊戲組/創意企劃組，入圍, 梁惠雯、黃致維、陳品伃，2021</li>
+            <p class="mb-0 mt-2">--2020--</p>
+            <li>科技部大專生計畫【攝影機鏡頭語言應用於數位遊戲─以2D捲軸遊戲為例】林盈君，計畫編號：109-2813-C-143-027-H，大專生研究創作獎</li>
+            <li>放視大賞, With Me, 遊戲類－PC遊戲創作組，入圍第二階，鄭智維、陳曦、周芷寧，2020</li>
+            <li>放視大賞, 霧霾戰爭, 遊戲類－PC遊戲創作組，入圍第二階，葉雲恩、呂曜憲、劉勵蓁，2020</li>
+            <li>放視大賞, Osmond, 遊戲類－PC遊戲創作組，入圍第二階，王梓、張祐榕、陳意文，2020</li>
+            <p class="mb-0 mt-2">--2019--</p>
+            <li>青春設計節, 瓦德與阿齊, 互動科技與遊戲設計類 優勝獎, 張權仁、李新臺、鄭穎</li>
+            <li>放視大賞, 瓦德與阿齊, 遊戲類-PC, 鈊象電子特別獎, 張權仁、李新臺、鄭穎</li>
+            <li>放視大賞,, 創意企畫類, 入圍第二階段, 方堉權、陳麒文、刁綺雁（VR遊戲）</li>
+            <li>放視大賞, 藥點, 創意企畫類, 入圍第二階段, 賴盈廷、呂亭儀</li>
+            <li>放視大賞, 哇！一點鐘, 2D動畫創作組, 入圍, 鄭鎔萱、鄭貽升</li>
+            <li>巴哈姆特ACG大賽, 瓦德與阿齊, 遊戲組，入圍，張權仁、李新臺、鄭穎</li>
+            <li>創想星球資訊科技創意大賽, 藥點, 數位影音組, 佳作, 賴盈廷、呂亭儀</li>
+            <li>學生三創競賽-東區, 藥點, 創新創意組, 佳作, 賴盈廷、呂亭儀</li>
+            <p class="mb-0 mt-2">--2018--</p>
+            <li>放視大賞, 愛在1960, 遊戲類VR組, 入圍, 王悅汝、黃儒玉、詹詠翔（VR遊戲）</li>
+            <li>放視大賞, 心迴之隅, 遊戲類PC組, 入圍, 陳彥霖、林詩庭、蘇詠茹</li>
+            <li>放視大賞, 哇！一點鐘, 2D動畫創作組, 入圍, 鄭鎔萱、鄭貽升</li>
+            <li>學生三創競賽-東區, 心迴之隅, 創新創意組, 佳作, 林詩庭、陳彥霖、蘇詠茹</li>
+            <p class="mb-0 mt-2">--2017--</p>
+            <li>科技部大專生計畫【空氣品質警告裝置「Adam」—以細懸浮微粒(PM2.5)為例】吳翎華，計畫編號：106-2813-C-143-010-H，大專生研究創作獎</li>
+            <li>科技部大專生計畫【蓋亞的贊禮──青少年自我認同之互動遊戲】106-2813-C-143-009-H</li>
+            <li>青春有影大學盃, 洛心, 百大精選名單, 入圍, 陳奕昀、鄭晴、林恩如</li>
+            <li>國際華文暨教育盃電子書創作大賽, 今天，人呢？, 原創組, 第四名, 黃婕、馬孟廷、楊宗達（AR互動電子書）</li>
+            <li>放視大賞, 熱氣衝飛, 跨領域類數位跨域組, 入圍, 張虔祥、李宜亭、鐘惠雯</li>
+            <li>放視大賞, 洛心, 動畫類-3D, 動畫創作組, 入圍, 陳奕昀、鄭晴、林恩如</li>
+            <p class="mb-0 mt-2">--2015--</p>
+            <li>微電影小確幸, 相煎何太急, 第3名, 連釗欣、李曼露、羅海旋
+            </li>
+            <p class="mb-0 mt-2">--2014--</p>
+            <li>比亞迪定格綠未來定格動畫創作大賽, 垃圾獸, 全中國第2名, 何思穎、陳柳雲、莫林青
+            </li>
+
+
+        </ol>
+
+    </div>
+
+    <div id="graduate" style="height: var(--bannerHeight);"> <!-- empty div --></div>
+    <div class="container">
+        graduate
+        <p>更新中</p>
+    </div>
+
+    <div id="bachelor" style="height: var(--bannerHeight);"> <!-- empty div --></div>
+    <div class="container">
+        bachelor
+        <p>更新中</p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
         </script>
 </body>
