@@ -109,7 +109,7 @@
             The Human-Computer Interaction Lab is dedicated to researching interactive technology with a focus on game
             design, virtual reality, augmented reality, and mechatronics integration. Our goal is to solve problems that
             arise in human-machine interaction while enhancing the overall user experience through the perspective of
-            both humanities and digital design. Additionally, we are committed to integrating gaming machines with
+            both humanities and digital design. Additionally, we are committed to integrating machinery with
             digital games, in order to inspire diverse gaming experiences.
         </p>
         <ul class="">
@@ -540,24 +540,24 @@
         // 捲動事件監聽器
         window.addEventListener("scroll", function () {
             // 計算插值因子
-            let a=obj.getBoundingClientRect();
-            
+            let a = obj.getBoundingClientRect();
+
             var windowHeight = window.innerHeight;
-            
-            if(a.y>-100 && a.y<windowHeight+100){
-                console.log( a.y/windowHeight);
-                var factor=a.y/windowHeight;
+
+            if (a.y > -100 && a.y < windowHeight + 100) {
+                console.log(a.y / windowHeight);
+                var factor = a.y / windowHeight;
                 const colorStart = getComputedStyle(document.documentElement).getPropertyValue('--colorStart').trim();
                 const colorEnd = getComputedStyle(document.documentElement).getPropertyValue('--colorEnd').trim();
                 obj.style.backgroundColor = interpolateColor(colorStart, colorEnd, factor);
 
             }
-            
-            
-            
-    
-           
-            
+
+
+
+
+
+
             // 設置背景顏色
         });
     </script>
