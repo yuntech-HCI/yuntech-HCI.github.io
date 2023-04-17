@@ -500,17 +500,29 @@
 
             if (el_autohide) {
                 var last_scroll_top = 0;
+
                 window.addEventListener('scroll', function () {
                     let scroll_top = window.scrollY;
-                    if (scroll_top < last_scroll_top) {
+                    if (scroll_top < 200) {
                         el_autohide.classList.remove('scrolled-down');
                         el_autohide.classList.add('scrolled-up');
                         var myDiv = document.getElementById("navbarSupportedContent");
                         myDiv.classList.remove("show");
+
                     }
                     else {
-                        el_autohide.classList.remove('scrolled-up');
-                        el_autohide.classList.add('scrolled-down');
+
+                        console.log(scroll_top);
+                        if (scroll_top < last_scroll_top) {
+                            el_autohide.classList.remove('scrolled-down');
+                            el_autohide.classList.add('scrolled-up');
+                            var myDiv = document.getElementById("navbarSupportedContent");
+                            myDiv.classList.remove("show");
+                        }
+                        else {
+                            el_autohide.classList.remove('scrolled-up');
+                            el_autohide.classList.add('scrolled-down');
+                        }
                     }
                     last_scroll_top = scroll_top;
                 });
@@ -525,7 +537,7 @@
 
         // 計算插值顏色
         function interpolateColor(color1, color2, factor) {
-            console.debug(color1);
+            //console.debug(color1);
             if (!color1 || !color2) {
                 return null;
             }
@@ -545,7 +557,7 @@
             var windowHeight = window.innerHeight;
 
             if (a.y > -100 && a.y < windowHeight + 100) {
-                console.log(a.y / windowHeight);
+                //console.log(a.y / windowHeight);
                 var factor = a.y / windowHeight;
                 const colorStart = getComputedStyle(document.documentElement).getPropertyValue('--colorStart').trim();
                 const colorEnd = getComputedStyle(document.documentElement).getPropertyValue('--colorEnd').trim();
