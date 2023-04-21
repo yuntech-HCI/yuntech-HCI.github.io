@@ -3,6 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="keywords"
+        content="雲科, yunTech, 雲林科技大學, National Yunlin University of Science and Technology, 人機互動實驗室, human computer interaction laboratory, HCILAB, HCI-LAB, YunTech-HCILAB, C.W. Shiu, Chih-Wei, Shiu, 許志維">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YunTech-HCILAB</title>
@@ -18,19 +20,33 @@
 
         #navbar {
             background: var(--colorStart);
-            backdrop-filter: blur(1px);
+            backdrop-filter: blur(5px);
 
 
         }
 
         .scrolled-down {
             transform: translateY(-100%);
-            transition: all 0.3s ease-in-out;
+            transition: all 0.5s ease-in-out;
         }
 
         .scrolled-up {
             transform: translateY(0);
-            transition: all 0.3s ease-in-out;
+            transition: all 0.5s ease-in-out;
+        }
+
+        .url1{
+            background-image: url(img/background/01.png);
+        }
+        .url2{
+            background-image: url(img/background/bg02.jpg);
+        }
+        .mybody {
+            
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
         }
     </style>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -48,319 +64,358 @@
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+
+
             <div class="collapse navbar-collapse justify-content-around" id="navbarSupportedContent">
-                <ul class="navbar-nav mx-auto mb-2 mb-lg-0 ">
-                    <li class="nav-item mx-3">
-                        <a class="nav-link" aria-current="page" href="#about"><svg xmlns="http://www.w3.org/2000/svg"
-                                width="16" height="16" fill="currentColor" class="bi bi-file-earmark-person-fill"
-                                viewBox="0 0 16 16">
-                                <path
-                                    d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0zM9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1zM11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0zm2 5.755V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-.245S4 12 8 12s5 1.755 5 1.755z" />
-                            </svg> 關於</a>
-                    </li>
-                    <li class="nav-item mx-3">
-                        <a class="nav-link" href="#members"><svg xmlns="http://www.w3.org/2000/svg" width="16"
-                                height="16" fill="currentColor" class="bi bi-people-fill" viewBox="0 0 16 16">
-                                <path
-                                    d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7Zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm-5.784 6A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216ZM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z" />
-                            </svg> 實驗成員</a>
-                    </li>
-                    <li class="nav-item mx-3">
-                        <a class="nav-link " href="#research"><svg xmlns="http://www.w3.org/2000/svg" width="16"
-                                height="16" fill="currentColor" class="bi bi-motherboard-fill" viewBox="0 0 16 16">
-                                <path d="M5 7h3V4H5v3Z" />
-                                <path
-                                    d="M1 2a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-2H.5a.5.5 0 0 1-.5-.5v-1A.5.5 0 0 1 .5 9H1V8H.5a.5.5 0 0 1-.5-.5v-1A.5.5 0 0 1 .5 6H1V5H.5a.5.5 0 0 1-.5-.5v-2A.5.5 0 0 1 .5 2H1Zm11 .5a.5.5 0 0 0-1 0v7a.5.5 0 0 0 1 0v-7Zm2 0a.5.5 0 0 0-1 0v7a.5.5 0 0 0 1 0v-7ZM3.5 10a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1h-6Zm0 2a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1h-6ZM4 4h-.5a.5.5 0 0 0 0 1H4v1h-.5a.5.5 0 0 0 0 1H4a1 1 0 0 0 1 1v.5a.5.5 0 0 0 1 0V8h1v.5a.5.5 0 0 0 1 0V8a1 1 0 0 0 1-1h.5a.5.5 0 0 0 0-1H9V5h.5a.5.5 0 0 0 0-1H9a1 1 0 0 0-1-1v-.5a.5.5 0 0 0-1 0V3H6v-.5a.5.5 0 0 0-1 0V3a1 1 0 0 0-1 1Zm7 7.5v1a.5.5 0 0 0 .5.5h2a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-2a.5.5 0 0 0-.5.5Z" />
-                            </svg> 研究成果</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle mx-3" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
+                <div class="navbar-nav mx-auto mb-2 mb-lg-0 ">
+                    <a class="nav-link mx-2" aria-current="page" href="#about">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-file-earmark-person-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0zM9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1zM11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0zm2 5.755V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-.245S4 12 8 12s5 1.755 5 1.755z" />
+                        </svg> 關於
+                    </a>
+
+                    <a class="nav-link mx-2" href="#members">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-people-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7Zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm-5.784 6A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216ZM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z" />
+                        </svg> 實驗成員
+                    </a>
+
+                    <a class="nav-link mx-2" href="#research">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-motherboard-fill" viewBox="0 0 16 16">
+                            <path d="M5 7h3V4H5v3Z" />
+                            <path
+                                d="M1 2a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-2H.5a.5.5 0 0 1-.5-.5v-1A.5.5 0 0 1 .5 9H1V8H.5a.5.5 0 0 1-.5-.5v-1A.5.5 0 0 1 .5 6H1V5H.5a.5.5 0 0 1-.5-.5v-2A.5.5 0 0 1 .5 2H1Zm11 .5a.5.5 0 0 0-1 0v7a.5.5 0 0 0 1 0v-7Zm2 0a.5.5 0 0 0-1 0v7a.5.5 0 0 0 1 0v-7ZM3.5 10a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1h-6Zm0 2a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1h-6ZM4 4h-.5a.5.5 0 0 0 0 1H4v1h-.5a.5.5 0 0 0 0 1H4a1 1 0 0 0 1 1v.5a.5.5 0 0 0 1 0V8h1v.5a.5.5 0 0 0 1 0V8a1 1 0 0 0 1-1h.5a.5.5 0 0 0 0-1H9V5h.5a.5.5 0 0 0 0-1H9a1 1 0 0 0-1-1v-.5a.5.5 0 0 0-1 0V3H6v-.5a.5.5 0 0 0-1 0V3a1 1 0 0 0-1 1Zm7 7.5v1a.5.5 0 0 0 .5.5h2a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-2a.5.5 0 0 0-.5.5Z" />
+                        </svg> 研究成果
+                    </a>
+
+                    <div class="nav-item dropdown btn-group mx-2">
+                        <a class="nav-link" href="#graduate">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                 class="bi bi-book-half" viewBox="0 0 16 16">
                                 <path
                                     d="M8.5 2.687c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z" />
                             </svg> 課程資訊
                         </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#graduate ">研究所</a></li>
-                            <li><a class="dropdown-item" href="#bachelor ">大學部</a></li>
-                        </ul>
-                    </li>
-                </ul>
+                        <a class="nav-link dropdown-toggle  dropdown-toggle-split" href="#" id="navbarDropdown"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+
+                        </a>
+
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#graduate ">研究所</a>
+                            <a class="dropdown-item" href="#bachelor ">大學部</a>
+                        </div>
+                    </div>
+
+
+                    <a class="nav-link mx-2" href="#contact">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-pin-map-fill" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M3.1 11.2a.5.5 0 0 1 .4-.2H6a.5.5 0 0 1 0 1H3.75L1.5 15h13l-2.25-3H10a.5.5 0 0 1 0-1h2.5a.5.5 0 0 1 .4.2l3 4a.5.5 0 0 1-.4.8H.5a.5.5 0 0 1-.4-.8l3-4z" />
+                            <path fill-rule="evenodd"
+                                d="M4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999z" />
+                        </svg> 聯絡我們
+                    </a>
+
+                </div>
             </div>
         </div>
     </nav>
 
     <!-- 首頁 -->
-    <div id="home" class="container-fluid p-0 shadow">
-        <div class="d-flex vh-100 my-0 px-0 bg-gradient" style="background-color: var(--divbackground);">
-            <div class="m-auto"> <img class="img-fluid" src="img/hciLABLOGO.png" alt=""></div>
+    <!-- <div class="container-fluid mybody shadow pb-5"> -->
+
+        <div id="home" class="container-fluid p-0 mybody url1 shadow pb-5">
+            <div class="d-flex vh-100 my-0 px-0">
+                <div class="m-auto"> <img class="img-fluid" src="img/hciLABLOGO.png" alt=""></div>
+            </div>
         </div>
-    </div>
+    <!-- </div> -->
 
     <!-- 關於實驗室的說明 -->
-    <div id="about" style="height: var(--bannerHeight);"> <!-- empty div --></div>
-    <div class="container mt-3" style="top: 100px;">
-        <h1>about YunTech HCILAB</h1>
-        <p>HCILAB致力於互動技術鑽研，以「遊戲設計」、「虛擬實境」、「擴增實境」以及「機電整合」為主軸，希望解決人類與機器互動所產生的問題，並以人文與數位設計觀點為立基，強化體驗溫度。同時本實驗室也專注於機台與數位遊戲的整合發展，藉此激發不同的遊戲體驗。
-        </p>
-        <p>
-            The Human-Computer Interaction Lab is dedicated to researching interactive technology with a focus on game
-            design, virtual reality, augmented reality, and mechatronics integration. Our goal is to solve problems that
-            arise in human-machine interaction while enhancing the overall user experience through the perspective of
-            both humanities and digital design. Additionally, we are committed to integrating machinery with
-            digital games, in order to inspire diverse gaming experiences.
-        </p>
-        <ul class="">
-            <li>AR/VR數位內容（AR/VR Digital Content）</li>
-            <li>2D/3D遊戲開發（2D/3D Game Development）
-                <ul>
-                    <li>遊戲美術（Game Art）</li>
-                    <li>遊戲互動（Gameplay Interaction）</li>
-                </ul>
-            </li>
-            <li>人機互動設計（HCI Design）
-                <ul>
-                    <li>輸入裝置開發（ID R&D）</li>
-                    <li>遊戲機台設計（Game Cabinet Design）</li>
-                </ul>
-            </li>
-            <li>資訊安全
-                <ul>
-                    <li>資訊隱藏(Data Hiding)</li>
-                    <li>可逆式資訊隱藏(Reversible Data Hiding)</li>
-                    <li>可逆式資訊隱藏於加密影像（Reversible Data Hiding in Encrypted Image）</li>
-                </ul>
-            </li>
-        </ul>
+    <div class="container-fluid  shadow pb-5">
+        <div id="about" style="height: var(--bannerHeight);"> <!-- empty div --></div>
+        <div class="container mb-5" style="top: 100px;">
+            <h1>About YunTech HCI-LAB</h1>
+            <p>HCILAB致力於互動技術鑽研，以「遊戲設計」、「虛擬實境」、「擴增實境」以及「機電整合」為主軸，希望解決人類與機器互動所產生的問題，並以人文與數位設計觀點為立基，強化體驗溫度。同時本實驗室也專注於機台與數位遊戲的整合發展，藉此激發不同的遊戲體驗。
+            </p>
+            <p>
+                The Human-Computer Interaction Lab is dedicated to researching interactive technology with a focus on
+                game
+                design, virtual reality, augmented reality, and mechatronics integration. Our goal is to solve problems
+                that
+                arise in human-machine interaction while enhancing the overall user experience through the perspective
+                of
+                both humanities and digital design. Additionally, we are committed to integrating machinery with
+                digital games, in order to inspire diverse gaming experiences.
+            </p>
+            <ul class="">
+                <li>AR/VR數位內容（AR/VR Digital Content）</li>
+                <li>2D/3D遊戲開發（2D/3D Game Development）
+                    <ul>
+                        <li>遊戲美術（Game Art）</li>
+                        <li>遊戲互動（Gameplay Interaction）</li>
+                    </ul>
+                </li>
+                <li>人機互動設計（HCI Design）
+                    <ul>
+                        <li>輸入裝置開發（ID R&D）</li>
+                        <li>遊戲機台設計（Game Cabinet Design）</li>
+                    </ul>
+                </li>
+                <li>資訊安全
+                    <ul>
+                        <li>資訊隱藏(Data Hiding)</li>
+                        <li>可逆式資訊隱藏(Reversible Data Hiding)</li>
+                        <li>可逆式資訊隱藏於加密影像（Reversible Data Hiding in Encrypted Image）</li>
+                    </ul>
+                </li>
+            </ul>
 
-        <div id="carouselExampleCaptions" class="carousel slide " data-bs-ride="carousel">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                    aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                    aria-label="Slide 3"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
-                    aria-label="Slide 4"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
-                    aria-label="Slide 5"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5"
-                    aria-label="Slide 6"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6"
-                    aria-label="Slide 7"></button>
+            <div id="carouselExampleCaptions" class="carousel slide " data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                        aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+                        aria-label="Slide 5"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5"
+                        aria-label="Slide 6"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6"
+                        aria-label="Slide 7"></button>
 
+                </div>
+                <p class="h3 mt-4">實作成果：</p>
+
+                <div class="carousel-inner ">
+                    <div class="carousel-item active">
+                        <img src="img/research/r1.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 class="text-light">AR/VR/MR/XR</h5>
+
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/research/r2.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 class="">互動開發-PC/Mobile</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/research/r3.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 class="text-light">人機互動設計</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/research/r4.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 class="text-light">次世代遊戲美術</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/research/r5.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 class="text-dark">低面數遊戲美術</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/research/r6.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 class="text-dark">電腦繪圖</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/research/r7.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 class="text-light">影像成果</h5>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
-            <p class="h3 mt-4">實作成果：</p>
 
-            <div class="carousel-inner ">
-                <div class="carousel-item active">
-                    <img src="img/research/r1.png" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5 class="text-light">AR/VR/MR/XR</h5>
 
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="img/research/r2.png" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5 class="">互動開發-PC/Mobile</h5>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="img/research/r3.png" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5 class="text-light">人機互動設計</h5>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="img/research/r4.png" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5 class="text-light">次世代遊戲美術</h5>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="img/research/r5.png" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5 class="text-dark">低面數遊戲美術</h5>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="img/research/r6.png" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5 class="text-dark">電腦繪圖</h5>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="img/research/r7.png" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5 class="text-light">影像成果</h5>
-                    </div>
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
+
         </div>
-
-
-
     </div>
 
     <!-- 成員 -->
-    <div id="members" class="" style="height: var(--bannerHeight);"> <!-- empty div --></div>
-    <div class="container shadow py-2">
-        <h1>members</h1>
-        <p class="h2">　　主持人</p>
-        <div class="row  justify-content-around mb-5">
+    <div class="container-fluid  shadow pb-5">
 
-            <div class="col col-md-7">
-                <div class="card mb-5 shadow">
-                    <div class="row g-0">
-                        <div class="col-12 col-md-4">
-                            <img src="img/members/ShiuCW.jpg" class="img-fluid rounded-start" alt="...">
-                        </div>
-                        <div class="col col-md-8">
-                            <div class="card-header h3 text-center ">Chih-Wei Shiu 許志維<i class="bi bi-person-square"></i></div>
-                            <div class="card-body">
-                                <p class="card-text"><b>專長：</b></p>
-                                <p class="card-text">-數位媒體設計．美術-<br>電腦繪圖、影像處理、遊戲企劃、次世代遊戲建模、公仔列印
-                                </p>
-                                <p class="card-text">-數位媒體設計．程式-<br>AR/VR/MR/XR互動程式開發、多人連線程式開發、遊戲設計、人機互動開發
-                                </p>
-                                <p class="card-text">-資訊安全-<br>資料隱藏、可逆式資訊隱藏、可逆式資訊隱藏於加密影像
-                                </p>
-                                <p class="card-text"><b>信箱：</b><a class="fs-6 text-decoration-none link-info"
-                                        href="mailto:chihwei.shiu@gmail.com">chihwei.shiu@gmail.com</a></p>
+        <div id="members" class="" style="height: var(--bannerHeight);"> <!-- empty div --></div>
+        <div class="container  py-2">
+            <h1>Members</h1>
+            <p class="h2">　　主持人</p>
+            <div class="row  justify-content-around mb-5">
+
+                <div class="col col-md-7">
+                    <div class="card mb-5 shadow">
+                        <div class="row g-0">
+                            <div class="col-12 col-md-4">
+                                <img src="img/members/ShiuCW.jpg" class="img-fluid rounded-start" alt="...">
+                            </div>
+                            <div class="col col-md-8">
+                                <div class="card-header h3 text-center ">Chih-Wei Shiu 許志維<i
+                                        class="bi bi-person-square"></i></div>
+                                <div class="card-body">
+                                    <p class="card-text"><b>專長：</b></p>
+                                    <p class="card-text">-數位媒體設計．美術-<br>電腦繪圖、影像處理、遊戲企劃、次世代遊戲建模、公仔列印
+                                    </p>
+                                    <p class="card-text">-數位媒體設計．程式-<br>AR/VR/MR/XR互動程式開發、多人連線程式開發、遊戲設計、人機互動開發
+                                    </p>
+                                    <p class="card-text">-資訊安全-<br>資料隱藏、可逆式資訊隱藏、可逆式資訊隱藏於加密影像
+                                    </p>
+                                    <p class="card-text"><b>信箱：</b><a class="fs-6 text-decoration-none link-info"
+                                            href="mailto:chihwei.shiu@gmail.com">chihwei.shiu@gmail.com</a></p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <p class="h2">　　碩士生</p>
-        <div class="row justify-content-center">
-            <!-- 凱文 -->
-            <div class="col col-md-7">
-                <div class="card mb-5 shadow">
-                    <div class="row g-0">
-                        <div class="col-12 col-md-4">
-                            <img src="img/members/LinKW.jpg" class="img-fluid rounded-start" alt="...">
-                        </div>
-                        <div class="col col-md-8">
-                            <div class="card-header h3 text-center ">Kai-Wen Lin 林凱文</div>
-                            <div class="card-body">
-                                <p class="card-text">111級-臺東大學數媒系（共同指導）</p>
-                                <p class="card-text"><b>專長：</b>UNITY、3D建模、PS</p>
+            <p class="h2">　　碩士生</p>
+            <div class="row justify-content-center">
+                <!-- 凱文 -->
+                <div class="col col-md-7">
+                    <div class="card mb-5 shadow">
+                        <div class="row g-0">
+                            <div class="col-12 col-md-4">
+                                <img src="img/members/LinKW.jpg" class="img-fluid rounded-start" alt="...">
+                            </div>
+                            <div class="col col-md-8">
+                                <div class="card-header h3 text-center ">Kai-Wen Lin 林凱文</div>
+                                <div class="card-body">
+                                    <p class="card-text">111級-臺東大學數媒系（共同指導）</p>
+                                    <p class="card-text"><b>專長：</b>UNITY、3D建模、PS</p>
 
-                                <p class="card-text"><b>信箱：</b><a class="fs-6 text-decoration-none link-info"
-                                        href="mailto:kd26091749@yahoo.com.tw">kd26091749@yahoo.com.tw</a></p>
+                                    <p class="card-text"><b>信箱：</b><a class="fs-6 text-decoration-none link-info"
+                                            href="mailto:kd26091749@yahoo.com.tw">kd26091749@yahoo.com.tw</a></p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div><p></p>
-            <!-- 亭儀 -->
-            <div class="col col-md-7">
-                <div class="card mb-5 shadow">
-                    <div class="row g-0">
-                        <div class="col-12 col-md-4">
-                            <img src="img/members/HeTY.jpg" class="img-fluid rounded-start" alt="...">
-                        </div>
-                        <div class="col col-md-8">
-                            <div class="card-header h3 text-center ">Ting-Yi He 何亭儀</div>
-                            <div class="card-body">
-                                <p class="card-text">111級-互動媒體設計組</p>
-                                <p class="card-text"><b>專長：</b>遊戲企劃、遊戲腳本劇情撰寫、Unity遊戲設計開發、Unity遊戲程式、電腦繪圖</p>
+                <p></p>
+                <!-- 亭儀 -->
+                <div class="col col-md-7">
+                    <div class="card mb-5 shadow">
+                        <div class="row g-0">
+                            <div class="col-12 col-md-4">
+                                <img src="img/members/HeTY.jpg" class="img-fluid rounded-start" alt="...">
+                            </div>
+                            <div class="col col-md-8">
+                                <div class="card-header h3 text-center ">Ting-Yi He 何亭儀</div>
+                                <div class="card-body">
+                                    <p class="card-text">111級-互動媒體設計組</p>
+                                    <p class="card-text"><b>專長：</b>遊戲企劃、遊戲腳本劇情撰寫、Unity遊戲設計開發、Unity遊戲程式、電腦繪圖</p>
 
-                                <p class="card-text"><b>信箱：</b><a class="fs-6 text-decoration-none link-info"
-                                        href="mailto:ksstp95152@gmail.com">ksstp95152@gmail.com</a></p>
+                                    <p class="card-text"><b>信箱：</b><a class="fs-6 text-decoration-none link-info"
+                                            href="mailto:ksstp95152@gmail.com">ksstp95152@gmail.com</a></p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div><p></p>
-            <!-- 新凱 -->
-            <div class="col col-md-7">
-                <div class="card mb-5 shadow">
-                    <div class="row g-0">
-                        <div class="col-12 col-md-4">
-                            <img src="img/members/LinXK.jpg" class="img-fluid rounded-start" alt="...">
-                        </div>
-                        <div class="col col-md-8">
-                            <div class="card-header h3 text-center ">Xin-Kai Lin 林新凱</div>
-                            <div class="card-body">
-                                <p class="card-text">112級-互動媒體設計組</p>
-                                <p class="card-text"><b>專長：</b>3D建模、 影片與平面拍攝、影像剪輯與調色、PR/AI/PS、Unity、空拍機</p>
+                <p></p>
+                <!-- 新凱 -->
+                <div class="col col-md-7">
+                    <div class="card mb-5 shadow">
+                        <div class="row g-0">
+                            <div class="col-12 col-md-4">
+                                <img src="img/members/LinXK.jpg" class="img-fluid rounded-start" alt="...">
+                            </div>
+                            <div class="col col-md-8">
+                                <div class="card-header h3 text-center ">Xin-Kai Lin 林新凱</div>
+                                <div class="card-body">
+                                    <p class="card-text">112級-互動媒體設計組</p>
+                                    <p class="card-text"><b>專長：</b>3D建模、 影片與平面拍攝、影像剪輯與調色、PR/AI/PS、Unity、空拍機</p>
 
-                                <p class="card-text"><b>信箱：</b><a class="fs-6 text-decoration-none link-info"
-                                        href="mailto:k28552219@gmail.com">k28552219@gmail.com</a></p>
+                                    <p class="card-text"><b>信箱：</b><a class="fs-6 text-decoration-none link-info"
+                                            href="mailto:k28552219@gmail.com">k28552219@gmail.com</a></p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div><p></p>
+                <p></p>
 
-            <!-- 心妤 -->
-            <div class="col col-md-7">
-                <div class="card mb-5 shadow">
-                    <div class="row g-0">
-                        <div class="col-12 col-md-4">
-                            <!--<img src="img/members/ChiuHY.jpg" class="img-fluid rounded-start" alt="...">-->
-                            <svg class="img-fluid" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-person-bounding-box" viewBox="0 0 16 16">
-  <path d="M1.5 1a.5.5 0 0 0-.5.5v3a.5.5 0 0 1-1 0v-3A1.5 1.5 0 0 1 1.5 0h3a.5.5 0 0 1 0 1h-3zM11 .5a.5.5 0 0 1 .5-.5h3A1.5 1.5 0 0 1 16 1.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 1-.5-.5zM.5 11a.5.5 0 0 1 .5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 1 0 1h-3A1.5 1.5 0 0 1 0 14.5v-3a.5.5 0 0 1 .5-.5zm15 0a.5.5 0 0 1 .5.5v3a1.5 1.5 0 0 1-1.5 1.5h-3a.5.5 0 0 1 0-1h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 1 .5-.5z"/>
-  <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm8-9a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
-</svg>
-                        </div>
-                        <div class="col col-md-8">
-                            <div class="card-header h3 text-center ">Hsin-Yu Chiu 邱心妤</div>
-                            <div class="card-body">
-                                <p class="card-text">112級-互動媒體設計組</p>
-                                <p class="card-text"><b>專長：</b>產品設計、產品企劃/開發/整合、3D建模、影像剪輯</p>
+                <!-- 心妤 -->
+                <div class="col col-md-7">
+                    <div class="card mb-5 shadow">
+                        <div class="row g-0">
+                            <div class="col-12 col-md-4">
+                                <!--<img src="img/members/ChiuHY.jpg" class="img-fluid rounded-start" alt="...">-->
+                                <svg class="img-fluid" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                    class="bi bi-person-bounding-box" viewBox="0 0 16 16">
+                                    <path
+                                        d="M1.5 1a.5.5 0 0 0-.5.5v3a.5.5 0 0 1-1 0v-3A1.5 1.5 0 0 1 1.5 0h3a.5.5 0 0 1 0 1h-3zM11 .5a.5.5 0 0 1 .5-.5h3A1.5 1.5 0 0 1 16 1.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 1-.5-.5zM.5 11a.5.5 0 0 1 .5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 1 0 1h-3A1.5 1.5 0 0 1 0 14.5v-3a.5.5 0 0 1 .5-.5zm15 0a.5.5 0 0 1 .5.5v3a1.5 1.5 0 0 1-1.5 1.5h-3a.5.5 0 0 1 0-1h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 1 .5-.5z" />
+                                    <path
+                                        d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm8-9a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                                </svg>
+                            </div>
+                            <div class="col col-md-8">
+                                <div class="card-header h3 text-center ">Hsin-Yu Chiu 邱心妤</div>
+                                <div class="card-body">
+                                    <p class="card-text">112級-互動媒體設計組</p>
+                                    <p class="card-text"><b>專長：</b>產品設計、產品企劃/開發/整合、3D建模、影像剪輯</p>
 
-                                <p class="card-text"><b>信箱：</b><a class="fs-6 text-decoration-none link-info"
-                                        href="mailto:cxs02015@gmail.com">cxs02015@gmail.com</a></p>
+                                    <p class="card-text"><b>信箱：</b><a class="fs-6 text-decoration-none link-info"
+                                            href="mailto:cxs02015@gmail.com">cxs02015@gmail.com</a></p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div><p></p>
-                       
-            <!-- 招募 -->
-            
-            <div class="col col-md-7">
-                <div class="card mb-5 shadow">
-                    <div class="row g-0">
-                        <div class="col-12 col-md-4" id="recurit">
-                            <img src="img/members/recruit.png" class="img-fluid rounded-start" alt="...">
-                        </div>
-                        <div class="col col-md-8">
-                            <div class="card-header h3 text-center ">--招募中--</div>
-                            <div class="card-body">
-                                <p class="card-text">不限大學部或研究所、不限專長，只要你喜歡動手實作，保持學習熱誠，Yuntech HCI LAB都歡迎</p>
+                <p></p>
+
+                <!-- 招募 -->
+
+                <div class="col col-md-7">
+                    <div class="card mb-5 shadow">
+                        <div class="row g-0">
+                            <div class="col-12 col-md-4" id="recurit">
+                                <img src="img/members/recruit.png" class="img-fluid rounded-start" alt="...">
+                            </div>
+                            <div class="col col-md-8">
+                                <div class="card-header h3 text-center ">--招募中--</div>
+                                <div class="card-body">
+                                    <p class="card-text">不限大學部或研究所、不限專長，只要你喜歡動手實作，保持學習熱誠，Yuntech HCI LAB都歡迎</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div><p></p>
+                <p></p>
 
 
+            </div>
         </div>
     </div>
-
     <!-- 研究方向 -->
     <div id="research" style="height: var(--bannerHeight);"> <!-- empty div --></div>
     <div class="container shadow py-2">
-        <h1>research</h1>
+        <h1>Research</h1>
         <p class=" mt-5">最新論文發表： <a class=" text-decoration-none link-info" target="_blank"
                 href="https://scholar.google.com.tw/citations?hl=zh-TW&view_op=list_works&gmla=ABEO0Yrvw4wogM3nWJwbajcQalEsWtQFVZgRFCk7MC4alC0NKSfGWmTXGGUE8LHXIl0XfWToqvFfkCH1iXg1B7RmgPY&user=rNASP-UAAAAJ">
                 google scholar</a>
@@ -526,21 +581,85 @@
     </div>
 
     <!-- 研究所課程 -->
-    <div id="graduate" style="height: var(--bannerHeight);"> <!-- empty div --></div>
-    <div class="container shadow py-2">
-        graduate
-        <p>更新中</p>
+    <div class="container-fluid bg-danger bg-opacity-25 shadow mybody url2">
+        <div id="graduate" style="height: var(--bannerHeight);"> <!-- empty div --></div>
+        <div class="container  py-2 bg-light">
+            <h1>Graduate</h1>
+            <p>更新中</p>
+        </div>
+
+        <!-- 大學部課程 -->
+
+        <div id="bachelor" style="height: var(--bannerHeight);"> <!-- empty div --></div>
+        <div class="container  py-2 bg-light">
+            <h1>Bachelor</h1>
+            <p>更新中</p>
+        </div>
     </div>
 
-    <!-- 大學部課程 -->
-    <div id="bachelor" style="height: var(--bannerHeight);"> <!-- empty div --></div>
-    <div class="container shadow py-2">
-        bachelor
-        <p>更新中</p>
+    <!-- 聯繫方式 -->
+    <div class="container-fluid bg-secondary py-2">
+        <div id="contact" style="height: var(--bannerHeight);"> <!-- empty div --></div>
+
+        <div class="container">
+            <h1>Contact us</h1>
+            <div class="row">
+
+                <div class="col-6 col-md-3 mt-2">
+                    <!-- <div class="card h-100 opacity-50"> -->
+                    <!-- <div class="card-body "> -->
+                    <p class="card-text"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="currentColor" class="bi bi-arrow-right-square-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M0 14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v12zm4.5-6.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5a.5.5 0 0 1 0-1z" />
+                        </svg> 地址：雲林縣斗六市大學路三段123號</p>
+                    <!-- </div> -->
+                    <!-- <div class="card-body "> -->
+                    <p class="card-text"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="currentColor" class="bi bi-arrow-right-square-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M0 14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v12zm4.5-6.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5a.5.5 0 0 1 0-1z" />
+                        </svg> 電話：(05)-534-2601#6502</p>
+                    <!-- </div> -->
+                    <!-- <div class="card-body "> -->
+                    <p class="card-text text-break"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="currentColor" class="bi bi-arrow-right-square-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M0 14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v12zm4.5-6.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5a.5.5 0 0 1 0-1z" />
+                        </svg> e-mail：chihwei.shiu@gmail.com</p>
+                    <!-- </div> -->
+                    <!-- </div> -->
+                </div>
+                <div class="col-6 col-md-3  mt-2 ">
+                    <!-- <div class="card h-100 opacity-50"> -->
+                    <!-- <div class="card-body"> -->
+                    <p class="card-text"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="currentColor" class="bi bi-arrow-right-square-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M0 14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v12zm4.5-6.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5a.5.5 0 0 1 0-1z" />
+                        </svg> 實驗室：設計二館 DC121b</p>
+                    <p class="card-text"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="currentColor" class="bi bi-arrow-right-square-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M0 14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v12zm4.5-6.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5a.5.5 0 0 1 0-1z" />
+                        </svg> 研究室：設計三館 DA511</p>
+                    <!-- </div> -->
+
+                    <!-- </div> -->
+                </div>
+                <div class="col col-md-6 mt-2">
+                    <div style="width: 100%;height: 400px;">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1826.770963712366!2d120.534941!3d23.692334000000002!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346ec804b5ab582d%3A0xaa2b4d2420cd04c!2z6Kit6KiI5a246ZmiM-mkqA!5e0!3m2!1szh-TW!2stw!4v1682056197669!5m2!1szh-TW!2stw"
+                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+
+                </div>
+            </div>
+        </div>
     </div>
-
-
-        <!-- footer -->
+    <!-- footer -->
 
     <div class="footer bg-dark text-end  p-1">
         <div class="container">
@@ -561,7 +680,7 @@
                 </div>
 
 
-                
+
             </div>
         </div>
 
@@ -697,11 +816,11 @@
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-QHQ4JMPK49"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-      gtag('config', 'G-QHQ4JMPK49');
+        gtag('config', 'G-QHQ4JMPK49');
     </script>
 </body>
 
