@@ -5,9 +5,24 @@
     <meta charset="UTF-8">
     <meta name="keywords"
         content="雲科, yunTech, 雲林科技大學, National Yunlin University of Science and Technology, 人機互動實驗室, human computer interaction laboratory, HCILAB, HCI-LAB, YunTech-HCILAB, C.W. Shiu, Chih-Wei, Shiu, 許志維">
+    <meta name="Description" content="國立雲林科技大學數位媒體設計學系-人機互動實驗室（YunTech HCI-LAB）">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YunTech-HCILAB</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var xmlhttp = new XMLHttpRequest();
+            xmlhttp.onreadystatechange = function () {
+                if (this.readyState == 4 && this.status == 200) {
+                    document.getElementById("navsetup").innerHTML = this.responseText;
+                }
+            };
+            xmlhttp.open("GET", "navbar.html", true);
+            xmlhttp.send();
+        });
+    </script>
     <style>
         :root {
             --bannerImg: 20px;
@@ -55,81 +70,9 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
 
-<body>
-    <nav class="autohi navbar navbar-expand-lg navbar-light fixed-top shadow" id="navbar" data-bs-spy="scroll"
-        data-bs-target="#navbar" data-bs-offset="70">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#home"><img class="img-fluid" src="img/Navbar.png" alt=""
-                    style="height:var(--bannerImg);"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="0">
 
-
-            <div class="collapse navbar-collapse justify-content-around" id="navbarSupportedContent">
-                <div class="navbar-nav mx-auto mb-2 mb-lg-0 ">
-                    <a class="nav-link mx-2" aria-current="page" href="#about">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi bi-file-earmark-person-fill" viewBox="0 0 16 16">
-                            <path
-                                d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0zM9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1zM11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0zm2 5.755V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-.245S4 12 8 12s5 1.755 5 1.755z" />
-                        </svg> 關於
-                    </a>
-
-                    <a class="nav-link mx-2" href="#members">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi bi-people-fill" viewBox="0 0 16 16">
-                            <path
-                                d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7Zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm-5.784 6A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216ZM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z" />
-                        </svg> 實驗成員
-                    </a>
-
-                    <a class="nav-link mx-2" href="#research">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi bi-motherboard-fill" viewBox="0 0 16 16">
-                            <path d="M5 7h3V4H5v3Z" />
-                            <path
-                                d="M1 2a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-2H.5a.5.5 0 0 1-.5-.5v-1A.5.5 0 0 1 .5 9H1V8H.5a.5.5 0 0 1-.5-.5v-1A.5.5 0 0 1 .5 6H1V5H.5a.5.5 0 0 1-.5-.5v-2A.5.5 0 0 1 .5 2H1Zm11 .5a.5.5 0 0 0-1 0v7a.5.5 0 0 0 1 0v-7Zm2 0a.5.5 0 0 0-1 0v7a.5.5 0 0 0 1 0v-7ZM3.5 10a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1h-6Zm0 2a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1h-6ZM4 4h-.5a.5.5 0 0 0 0 1H4v1h-.5a.5.5 0 0 0 0 1H4a1 1 0 0 0 1 1v.5a.5.5 0 0 0 1 0V8h1v.5a.5.5 0 0 0 1 0V8a1 1 0 0 0 1-1h.5a.5.5 0 0 0 0-1H9V5h.5a.5.5 0 0 0 0-1H9a1 1 0 0 0-1-1v-.5a.5.5 0 0 0-1 0V3H6v-.5a.5.5 0 0 0-1 0V3a1 1 0 0 0-1 1Zm7 7.5v1a.5.5 0 0 0 .5.5h2a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-2a.5.5 0 0 0-.5.5Z" />
-                        </svg> 研究成果
-                    </a>
-
-                    <div class="nav-item dropdown btn-group mx-2">
-                        <a class="nav-link" href="#graduate">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-book-half" viewBox="0 0 16 16">
-                                <path
-                                    d="M8.5 2.687c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z" />
-                            </svg> 課程資訊
-                        </a>
-                        <a class="nav-link dropdown-toggle  dropdown-toggle-split" href="#" id="navbarDropdown"
-                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
-
-                        </a>
-
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#graduate ">研究所</a>
-                            <a class="dropdown-item" href="#bachelor ">大學部</a>
-                        </div>
-                    </div>
-
-
-                    <a class="nav-link mx-2" href="#contact">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi bi-pin-map-fill" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd"
-                                d="M3.1 11.2a.5.5 0 0 1 .4-.2H6a.5.5 0 0 1 0 1H3.75L1.5 15h13l-2.25-3H10a.5.5 0 0 1 0-1h2.5a.5.5 0 0 1 .4.2l3 4a.5.5 0 0 1-.4.8H.5a.5.5 0 0 1-.4-.8l3-4z" />
-                            <path fill-rule="evenodd"
-                                d="M4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999z" />
-                        </svg> 聯絡我們
-                    </a>
-
-                </div>
-            </div>
-        </div>
-    </nav>
-
+    <div id="navsetup"><!--載入外部navbar --></div>
     <!-- 首頁 -->
     <!-- <div class="container-fluid mybody shadow pb-5"> -->
 
@@ -722,133 +665,13 @@
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
         </script>
 
-    <!-- navbar自動隱藏效果 -->
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-
-            el_autohide = document.querySelector('.navbar');
-
-            // add padding-top to bady (if necessary)
-            navbar_height = document.querySelector('.navbar').offsetHeight;
-            document.body.style.paddingTop = navbar_height + 'px';
-
-            if (el_autohide) {
-                var last_scroll_top = 0;
-
-                window.addEventListener('scroll', function () {
-                    let scroll_top = window.scrollY;
-                    if (scroll_top < 100) {
-                        el_autohide.classList.remove('scrolled-down');
-                        el_autohide.classList.add('scrolled-up');
-                        var myDiv = document.getElementById("navbarSupportedContent");
-                        myDiv.classList.remove("show");
-
-                    }
-                    else {
-
-                        console.log(scroll_top);
-                        if (scroll_top < last_scroll_top) {
-                            el_autohide.classList.remove('scrolled-down');
-                            el_autohide.classList.add('scrolled-up');
-                            var myDiv = document.getElementById("navbarSupportedContent");
-                            myDiv.classList.remove("show");
-                        }
-                        else {
-                            el_autohide.classList.remove('scrolled-up');
-                            el_autohide.classList.add('scrolled-down');
-                        }
-                    }
-                    last_scroll_top = scroll_top;
-                });
-                // window.addEventListener
-            }
-            // if
-
-        }); 
-    </script>
-    <script>
-        var obj = document.getElementById("recurit");
-
-        // 計算插值顏色
-        function interpolateColor(color1, color2, factor) {
-            //console.debug(color1);
-            if (!color1 || !color2) {
-                return null;
-            }
-            var c1 = color1.match(/\d+/g);
-            var c2 = color2.match(/\d+/g);
-            var r = Math.round(parseInt(c1[0]) * (1 - factor) + parseInt(c2[0]) * factor);
-            var g = Math.round(parseInt(c1[1]) * (1 - factor) + parseInt(c2[1]) * factor);
-            var b = Math.round(parseInt(c1[2]) * (1 - factor) + parseInt(c2[2]) * factor);
-            return "rgb(" + r + ", " + g + ", " + b + ")";
-        }
-
-        // 捲動事件監聽器
-        window.addEventListener("scroll", function () {
-            // 計算插值因子
-            let a = obj.getBoundingClientRect();
-
-            var windowHeight = window.innerHeight;
-
-            if (a.y > -100 && a.y < windowHeight + 100) {
-                //console.log(a.y / windowHeight);
-                var factor = a.y / windowHeight;
-                const colorStart = getComputedStyle(document.documentElement).getPropertyValue('--colorStart').trim();
-                const colorEnd = getComputedStyle(document.documentElement).getPropertyValue('--colorEnd').trim();
-                obj.style.backgroundColor = interpolateColor(colorStart, colorEnd, factor);
-
-            }
-        });
-    </script>
-    <script>
-
-        // 獲取進度條元素
-        const progressBar = document.getElementById('navbar');
-
-        const colorStart = getComputedStyle(document.documentElement).getPropertyValue('--colorStart').trim();
-        const colorEnd = getComputedStyle(document.documentElement).getPropertyValue('--colorEnd').trim();
+    <script src="navbar.js"></script>
 
 
-        // 監聽捲軸事件
-        window.addEventListener('scroll', () => {
-            // 獲取文檔高度和視窗高度
-            const docHeight = document.documentElement.scrollHeight;
-            const windowHeight = window.innerHeight;
-
-            // 獲取當前滾動位置
-            const scrollPosition = window.scrollY || window.pageYOffset;
-
-            // 計算滾動位置相對於文檔底部的百分比
-            const scrollPercentage = (scrollPosition + windowHeight) / docHeight;
-
-
-            const red = colorStart.match(/\d+/g).map(Number); // 從 CSS 變數中提取紅色值
-            const blue = colorEnd.match(/\d+/g).map(Number); // 從 CSS 變數中提取藍色值
-            const interpolatedColor = red.map((c, i) => Math.round(c * (1 - scrollPercentage) + blue[i] * scrollPercentage));
-
-
-            // 設置進度條背景顏色
-            progressBar.style.backgroundColor = `rgb(${interpolatedColor[0]}, ${interpolatedColor[1]}, ${interpolatedColor[2]}, 0.85)`;
-
-
-
-        });
-
-        var lastModDate = new Date(document.lastModified);
-        document.getElementById("modDate").innerHTML = "Last update date：" + lastModDate.toDateString();
-
-        //
-
-
-    </script>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-QHQ4JMPK49"></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
 
-        gtag('config', 'G-QHQ4JMPK49');
     </script>
 </body>
 
