@@ -44,8 +44,7 @@
   .nav-wrap { width: min(100% - var(--gutter) * 2, 1440px); margin: auto; min-height: 85px; display: flex; justify-content: space-between; align-items: center; gap: 24px; }
   .wordmark { display: flex; align-items: center; gap: 11px; font-size: 12px; line-height: 1.3; font-weight: 700; flex-shrink: 0; }
   .wordmark > span:last-child > span { display: block; font-size: 17px; }
-  .brand-glyph { position: relative; font-size: 29px; line-height: 38px; height: 40px; width: 58px; font-weight: 800; }
-  .brand-glyph > span { position: absolute; right: 0; top: -7px; font-size: 24px; color: #367a12; }
+  .brand-glyph { display: inline-flex; align-items: center; flex: 0 0 auto; font-size: 29px; line-height: 1; height: 44px; font-weight: 800; white-space: nowrap; overflow-wrap: normal; }
   #primary-nav { display: flex; align-items: center; gap: 32px; font-size: 13px; font-weight: 600; }
   #primary-nav > a { display: inline-flex; align-items: center; gap: 12px; position: relative; padding-block: 10px; }
   #primary-nav > a:not(.nav-contact)::after { content: ''; position: absolute; left: 0; right: 0; bottom: 4px; height: 2px; background: var(--ink); transform: scaleX(0); transform-origin: left; transition: transform .2s; }
@@ -116,7 +115,6 @@
   .portrait { position: relative; aspect-ratio: 1 / 1.12; background: #e0e7de; overflow: hidden; }
   .portrait > img { width: 100%; height: 100%; object-fit: cover; object-position: center 25%; transition: transform .4s; }
   .member:hover .portrait > img { transform: scale(1.035); }
-  .new-label { position: absolute; left: 0; bottom: 0; background: var(--lime); color: var(--ink); padding: 6px 12px; font: 10px Consolas, monospace; }
   .portrait-placeholder { display: flex; height: 100%; flex-direction: column; align-items: center; justify-content: center; font-size: 65px; color: #526b49; }
   .portrait-placeholder span { font: 11px Consolas, monospace; }
   .member-meta { padding-top: 18px; }
@@ -145,8 +143,15 @@
   details[open] > summary .icon { transform: rotate(45deg); }
   .record-group ol { list-style: none; }
   .record { display: grid; grid-template-columns: 35px 1fr; gap: 15px; padding: 22px 0; border-top: 1px solid #e9ece7; }
+  .record.has-link { grid-template-columns: 35px minmax(0, 1fr) auto; }
   .record p { font-size: 14px; line-height: 1.9; max-width: 1080px; }
   .record-number { font: 10px Consolas, monospace; color: var(--muted); padding-top: 7px; }
+  .record-link { display: inline-flex; align-items: center; justify-content: space-between; align-self: start; gap: 14px; min-width: 104px; margin-top: 3px; padding: 8px 9px 8px 11px; border: 1px solid #cbd5c2; border-left: 3px solid var(--lime); border-radius: 4px; background: #fbfdf8; color: #304b19; white-space: nowrap; transition: background-color .2s ease, border-color .2s ease, transform .2s ease; }
+  .record-link-copy { display: grid; gap: 1px; }
+  .record-link-kicker { font: 8px Consolas, monospace; color: var(--muted); }
+  .record-link-type { font: 700 10px Consolas, monospace; }
+  .record-link .icon { width: 14px; height: 14px; flex-basis: 14px; }
+  .record-link:hover { border-color: #91b95c; background: #f0f7e7; color: var(--ink); transform: translateY(-1px); }
   .search-field { display: flex; align-items: center; gap: 10px; border: 1px solid var(--line); padding: 10px 12px; width: 285px; border-radius: 3px; }
   .search-field:focus-within { outline: 2px solid #4e761f; }
   .search-field .icon { width: 15px; height: 15px; flex-basis: 15px; }
@@ -317,7 +322,6 @@
     .skills { font-size: 11px; }
     .member-email { font-size: 9px; gap: 4px; }
     .member-email .icon { flex-basis: 11px; width: 11px; }
-    .new-label { font-size: 8px; padding: 6px 8px; }
     .join-band { margin-top: 40px; padding: 26px 22px; flex-direction: column; align-items: start; gap: 22px; }
     .join-band h3 { font-size: 21px; line-height: 1.6; }
     .join-band p:last-child { font-size: 12px; }
@@ -328,7 +332,9 @@
     .record-group > summary { font-size: 15px; min-height: 66px; }
     .summary-count { gap: 15px; }
     .record { grid-template-columns: 23px 1fr; gap: 10px; padding-block: 18px; }
+    .record.has-link { grid-template-columns: 23px minmax(0, 1fr); }
     .record p { font-size: 12px; }
+    .record-link { grid-column: 2; justify-self: start; margin-top: 0; }
     .course-level { grid-template-columns: 1fr; }
     .course-level > h3 { font-size: 19px; margin-top: 10px; }
     .contact-section { padding-top: 60px; }

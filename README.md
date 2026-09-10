@@ -5,6 +5,7 @@
 ## 檔案與維護
 
 - `content/lab.json`：成員、論文、計畫、得獎、課程及最後更新日期。
+- `content/publication-links.json`：已核對的論文 DOI、期刊頁面與書目頁面連結；鍵值必須與論文引號內的題名一致。
 - `build.mjs`：語意化頁面、SEO 中繼資料、結構化資料及元件範本。
 - `styles.css`：CSS Layers、Grid、響應式版型及減少動態效果設定。
 - `app.js`：導覽、成員篩選、研究搜尋、課程切換及原生 dialog 作品燈箱。
@@ -18,6 +19,8 @@ node build.mjs
 ```
 
 這會更新 `index.html` 和 `sitemap.xml`。部署時必須一併上傳產生的 HTML、CSS、JavaScript、assets 與 img。GitHub Pages 不需要執行 Node.js。原有 Google 驗證檔與 robots.txt 已保留。
+
+新增論文連結時，請優先使用 `https://doi.org/...`；沒有 DOI 時才使用期刊或學術機構的正式書目頁。網站會在論文右側顯示 `DOI`、`期刊頁面` 或 `書目頁面`。
 
 成員依資料陣列順序顯示；王家恩位於碩士生第一位。`group` 可用 `pi`、`graduate` 或 `alumni`。成員照片目前對應 `assets/members/{id}.webp`，原圖路徑保留在 `image` 欄位。若新增照片，可提供壓縮版至上述路徑；或使用 `tools/prepare-assets.cjs` 批次產生，需要開發用的 sharp 套件與網路連線。沒有照片的成員請填 `image: null`。
 

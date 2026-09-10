@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-09",
+  "updated": "2026-09-10",
   "members": [
     {
       "id": "ShiuCW",
@@ -16,7 +16,7 @@
     },
     {
       "id": "WangCE",
-      "name": "CHIA-EN,WANG 王家恩",
+      "name": "Chia-En Wang 王家恩",
       "group": "graduate",
       "image": "img/members/WangCE.jpg",
       "paragraphs": [
@@ -223,7 +223,7 @@
     },
     {
       "group": "學術國際期刊",
-      "text": "W. Hong, J. Chen, T.S. Chen, and C.W. Shiu, “Steganography for Block Truncation Coding Compressed Images Using Hybrid Embedding Scheme,” International Journal of Innovative Computing, Information and Control, vol. 7, no. 3, 11 pages, 2011. ( EI)"
+      "text": "W. Hong, J. Chen, T.S. Chen, and C.W. Shiu, “Steganography for Block Truncation Coding Compressed Images Using Hybrid Embedding Scheme,” International Journal of Innovative Computing, Information and Control, vol. 7, no. 2, pp. 733-743, 2011. (EI)"
     },
     {
       "group": "學術國際期刊",
@@ -689,9 +689,15 @@
   "courses": [
     {
       "level": "graduate",
+      "semester": "115-1 學期",
+      "name": "遊戲專題",
+      "url": "https://webapp.yuntech.edu.tw/WebNewCAS/Course/Plan/Query.aspx?&115&1&5210"
+    },
+    {
+      "level": "graduate",
       "semester": "114-1 學期",
       "name": "遊戲專題",
-      "url": null
+      "url": "https://webapp.yuntech.edu.tw/WebNewCAS/Course/Plan/Query.aspx?&114&1&5209"
     },
     {
       "level": "graduate",
@@ -737,21 +743,39 @@
     },
     {
       "level": "bachelor",
+      "semester": "115-1 學期",
+      "name": "APP設計",
+      "url": "https://webapp.yuntech.edu.tw/WebNewCAS/Course/Plan/Query.aspx?&115&1&5130"
+    },
+    {
+      "level": "bachelor",
+      "semester": "115-1 學期",
+      "name": "互動媒體設計專題（三）",
+      "url": "https://webapp.yuntech.edu.tw/WebNewCAS/Course/Plan/Query.aspx?&115&1&5137"
+    },
+    {
+      "level": "bachelor",
+      "semester": "115-1 學期",
+      "name": "數位媒體企劃",
+      "url": "https://webapp.yuntech.edu.tw/WebNewCAS/Course/Plan/Query.aspx?&115&1&5110"
+    },
+    {
+      "level": "bachelor",
       "semester": "114-1 學期",
       "name": "APP設計",
-      "url": null
+      "url": "https://webapp.yuntech.edu.tw/WebNewCAS/Course/Plan/Query.aspx?&114&1&5129"
     },
     {
       "level": "bachelor",
       "semester": "114-1 學期",
       "name": "數位媒體企劃",
-      "url": null
+      "url": "https://webapp.yuntech.edu.tw/WebNewCAS/Course/Plan/Query.aspx?&114&1&5109"
     },
     {
       "level": "bachelor",
       "semester": "114-1 學期",
       "name": "互動媒體設計專題（三）",
-      "url": null
+      "url": "https://webapp.yuntech.edu.tw/WebNewCAS/Course/Plan/Query.aspx?&114&1&5136"
     },
     {
       "level": "bachelor",
