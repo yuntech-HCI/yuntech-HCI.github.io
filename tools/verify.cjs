@@ -25,7 +25,12 @@ const url = pathToFileURL(path.join(root, 'index.html')).href;
     await page.screenshot({ path: path.join(output, 'desktop-full.png'), fullPage: true });
     await page.locator('#works').screenshot({ path: path.join(output, 'works.png') });
     assert.equal(await page.locator('h1').count(), 1);
-    assert.equal(await page.locator('.record-link').count(), 26);
+    assert.equal(await page.locator('.record-link').count(), 25);
+    assert.equal(await page.getByText('vol. 39, Part A, pp. 226-233, Nov. 2015', { exact: false }).count(), 1);
+    assert.equal(await page.getByText('vol. 8, no. 3, pp. 1105-1118, Mar. 2014', { exact: false }).count(), 1);
+    assert.equal(await page.getByText('vol. 90, no. 11, pp. 2911-2922, Nov. 2010', { exact: false }).count(), 1);
+    assert.equal(await page.getByText('Fukuoka, Japan, pp. 1-6, Dec. 2025', { exact: false }).count(), 1);
+    assert.equal(await page.getByText('Kitakyushu, Japan, pp. 1271-1272, Oct. 2024', { exact: false }).count(), 1);
     assert.equal(await page.locator('#WangCE .english-name').textContent(), 'Chia-En Wang');
     assert.equal(await page.locator('.member:visible').first().getAttribute('id'), 'WangCE');
     assert.equal(await page.locator('.member:visible').count(), 10);
@@ -48,9 +53,9 @@ const url = pathToFileURL(path.join(root, 'index.html')).href;
     await page.locator('[data-research="publications"]').click();
     const journalGroup = page.locator('#panel-publications .record-group').nth(1);
     await journalGroup.evaluate(element => { element.open = true; });
-    assert.deepEqual(await journalGroup.locator('.record-link-type').allTextContents(), ['ARTICLE', 'DOI', 'DOI', 'DOI', 'DOI', 'DOI', 'DOI', 'DOI', 'DOI', 'ISSUE', 'ISSUE', 'PDF', 'DOI', 'DOI', 'DOI', 'ARTICLE']);
+    assert.deepEqual(await journalGroup.locator('.record-link-type').allTextContents(), ['ARTICLE', 'DOI', 'DOI', 'DOI', 'DOI', 'DOI', 'DOI', 'DOI', 'DOI', 'ISSUE', 'ISSUE', 'PDF', 'DOI', 'DOI', 'DOI', 'DOI']);
     for (const href of [
-      'https://www.sciencedirect.com/science/article/pii/S0164121209001204',
+      'https://doi.org/10.1016/j.jss.2009.05.051',
       'http://www.ijicic.org/vol-9(2).htm',
       'http://www.ijicic.org/vol-7(9).htm',
       'http://www.ijicic.org/09-1006-1.pdf'
