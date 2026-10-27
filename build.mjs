@@ -29,7 +29,7 @@ function member(m) {
   const thesis = p.find(t => t.includes('論文題目：'));
   return `<article class="member" id="${m.id}" data-group="${m.group}">
     <div class="portrait">${m.image ? `<img src="assets/members/${m.id}.webp" width="560" height="660" alt="${esc(m.name)}" loading="lazy" decoding="async">` : `<div class="portrait-placeholder" aria-label="${esc(chinese)}，尚無照片">${esc(english.split(/\s+/).map(part => part[0]).join('').slice(0, 2))}<span>HCI LAB</span></div>`}</div>
-    <div class="member-meta"><p class="mono">${esc(p[0])}</p><h3>${esc(chinese)}</h3><p class="english-name" lang="en">${esc(english)}</p><p class="skills">${esc(skills)}</p>${thesis ? `<details class="thesis"><summary>論文研究${icon('plus-lg')}</summary><p>${esc(thesis)}</p></details>` : ''}<a class="member-email" href="mailto:${esc(m.email)}">${icon('envelope')}<span>${esc(m.email)}</span></a></div>
+    <div class="member-meta"><p class="mono">${esc(p[0])}</p><h3>${esc(chinese)}</h3><p class="english-name" lang="en">${esc(english)}</p><p class="skills">${esc(skills)}</p>${thesis ? `<details class="thesis"><summary>論文研究${icon('plus-lg')}</summary><p>${esc(thesis)}</p></details>` : ''}${m.email ? `<a class="member-email" href="mailto:${esc(m.email)}">${icon('envelope')}<span>${esc(m.email)}</span></a>` : ''}</div>
   </article>`;
 }
 function researchGroup(key, label) {

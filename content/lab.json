@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-10",
+  "updated": "2026-10-27",
   "members": [
     {
       "id": "ShiuCW",
@@ -24,6 +24,16 @@
         "專長：Unity、遊戲開發、企劃、平面設計、影像剪輯"
       ],
       "email": "brianwang1205@gmail.com"
+    },
+    {
+      "id": "LeungCK",
+      "name": "Ching-Kuen Leung 梁正權",
+      "group": "graduate",
+      "image": "img/members/LeungCK.png",
+      "paragraphs": [
+        "115級-互動媒體組",
+        "專長：Unity 遊戲開發、遊戲設計、2D 數位美術、3D 建模與動作製作、遊戲視覺特效（VFX）、遊戲關卡設計、UI／UX 設計、遊戲企劃、故事編寫、AI 輔助數位內容製作。"
+      ]
     },
     {
       "id": "HsiaoJR",
