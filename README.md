@@ -30,7 +30,7 @@ node build.mjs
 
 新增論文連結時，請優先使用 `https://doi.org/...`；沒有 DOI 時才使用期刊或學術機構的正式書目頁。網站會在論文右側顯示 `DOI`、`期刊頁面` 或 `書目頁面`。
 
-成員依資料陣列順序顯示；王家恩位於碩士生第一位。`group` 可用 `pi`、`graduate` 或 `alumni`。成員照片目前對應 `assets/members/{id}.webp`，原圖路徑保留在 `image` 欄位。若新增照片，可提供壓縮版至上述路徑；或使用 `tools/prepare-assets.cjs` 批次產生，需要開發用的 sharp 套件與網路連線。沒有照片的成員請填 `image: null`。
+成員依資料陣列順序顯示；梁正權位於碩士生第一位。`group` 可用 `pi`、`graduate` 或 `alumni`。成員照片目前對應 `assets/members/{id}.webp`，原圖路徑保留在 `image` 欄位。若新增照片，可提供壓縮版至上述路徑；或使用 `tools/prepare-assets.cjs` 批次產生，需要開發用的 sharp 套件與網路連線。沒有照片的成員請填 `image: null`。
 
 `updated` 請填寫實際內容修改日期，頁尾與 sitemap 會同步更新。課程 `url: null` 會顯示「課綱尚未提供」，不會產生無效連結。新增頁面或變更正式網域時，也要同步調整 build.mjs 的 canonical、社群分享 URL 和 sitemap。
 
